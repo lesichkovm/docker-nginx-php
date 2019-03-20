@@ -15,3 +15,5 @@ RUN mkdir /web
 
 # Expose the 8080 port
 EXPOSE 8080/tcp
+
+CMD ["/bin/sh"]
