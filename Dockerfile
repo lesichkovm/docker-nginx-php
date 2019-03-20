@@ -15,6 +15,9 @@ RUN chmod a+x /usr/local/bin/composer
 # Install NGINX
 RUN apt-get -y install nginx
 
+RUN apt-get -y autoremove
+RUN apt-get -y autoclean
+
 # Create project directory
 RUN mkdir /web
 
