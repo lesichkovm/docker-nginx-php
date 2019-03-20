@@ -7,6 +7,11 @@ RUN apt-get -y update
 # Install PHP
 RUN apt-get -y install php
 
+# Install Composer
+RUN curl -sS https://getcomposer.org/installer | php
+RUN mv composer.phar /usr/local/bin/composer
+RUN chmod a+x /usr/local/bin/composer
+
 # Install NGINX
 RUN apt-get -y install nginx
 
