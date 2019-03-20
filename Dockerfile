@@ -3,6 +3,7 @@ FROM ubuntu:18.10
 
 # Update
 RUN apt-get -y update
+RUN apt-get install --no-install-recommends --no-install-suggests -y curl 
 
 # Install PHP
 RUN apt-get -y install php
