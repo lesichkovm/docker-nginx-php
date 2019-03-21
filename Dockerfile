@@ -6,7 +6,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y upgrade
 
 # Install PHP
-RUN DEBIAN_FRONTEND=noninteractive apt-get -y --no-install-recommends --no-install-suggests install curl
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y --no-install-recommends --no-install-suggests install ca-certificates curl
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y --no-install-recommends --no-install-suggests install nano
 
 # Install PHP
