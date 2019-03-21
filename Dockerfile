@@ -1,5 +1,5 @@
-# Use Ubuntu 18.10
-FROM ubuntu:18.10
+# Use Ubuntu 18.04
+FROM ubuntu:18.04
 
 # Update
 RUN DEBIAN_FRONTEND=noninteractive apt-get update
